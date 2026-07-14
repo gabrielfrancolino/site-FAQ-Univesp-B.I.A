@@ -8,7 +8,6 @@ Site estático, simples e editável, com perguntas e respostas para calouros do 
 - `styles.css`: aparência visual.
 - `script.js`: busca, filtro e abertura das perguntas.
 - `data.js`: conteúdo editável do FAQ.
-- `MANUAL_PUBLICACAO_GITHUB.md`: passo a passo para publicar no GitHub Pages.
 
 ## Como editar perguntas
 
