@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia do Calouro — Bacharelado em IA Univesp</title>
+  <meta name="description" content="Perguntas essenciais para calouros do Bacharelado em Inteligência Artificial da Univesp, baseadas no PPC oficial e no Manual do Aluno.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <a href="#inicio" class="brand">Guia IA Univesp</a>
+      <a href="#perguntas">Perguntas</a>
+      <a href="#fontes">Fontes</a>
+      <a href="#editar">Editar</a>
+    </nav>
+    <section id="inicio" class="hero-content">
+      <p class="eyebrow">Bacharelado em Inteligência Artificial • Calouros</p>
+      <h1>O essencial para começar bem na Univesp</h1>
+      <p class="lead">Perguntas e respostas em linguagem simples, organizadas por eixo, com base no PPC oficial do curso de IA e no Manual do Aluno.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#perguntas">Ver perguntas</a>
+        <a class="button" href="#editar">Como editar e publicar</a>
+      </div>
+      <div class="notice">
+        <strong>Atenção:</strong> este site é um guia de apoio feito para calouros. Prazos, regras e documentos podem mudar. Sempre confira o AVA, o Manual do Aluno, o PPC e os comunicados oficiais da Univesp.
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="summary-grid" aria-label="Resumo rápido">
+      <article>
+        <span>Curso</span>
+        <strong>Bacharelado em Inteligência Artificial</strong>
+        <small>Nome oficial no PPC.</small>
+      </article>
+      <article>
+        <span>Carga horária</span>
+        <strong>3.400 horas</strong>
+        <small>3.200h em disciplinas + 200h de APP.</small>
+      </article>
+      <article>
+        <span>Integralização</span>
+        <strong>8 a 12 semestres</strong>
+        <small>Fluxo mínimo de 4 anos.</small>
+      </article>
+      <article>
+        <span>Avaliações</span>
+        <strong>AVA + prova no polo</strong>
+        <small>40% atividades e 60% prova presencial nas disciplinas regulares.</small>
+      </article>
+    </section>
+
+    <section id="perguntas" class="section">
+      <div class="section-head">
+        <p class="eyebrow">FAQ remasterizado</p>
+        <h2>Perguntas que todo calouro deveria saber</h2>
+        <p>Use a busca, filtre por eixo e abra cada resposta. Cada card mostra a fonte oficial usada.</p>
+      </div>
+
+      <div class="tools" aria-label="Ferramentas de busca e filtro">
+        <label class="search-label">
+          <span>Buscar</span>
+          <input id="search" type="search" placeholder="Ex.: prova, AVA, matrícula, APP, estágio..." autocomplete="off">
+        </label>
+        <label class="select-label">
+          <span>Eixo</span>
+          <select id="axisFilter">
+            <option value="todos">Todos os eixos</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="stats" class="stats"></div>
+      <div id="faqList" class="faq-list"></div>
+    </section>
+
+    <section id="fontes" class="section sources">
+      <div class="section-head">
+        <p class="eyebrow">Fontes oficiais usadas no conteúdo</p>
+        <h2>Base de referência</h2>
+        <p>As respostas foram reescritas a partir de duas fontes principais: PPC do Bacharelado em IA e Manual do Aluno. O FAQ anterior serviu apenas como inspiração de perguntas.</p>
+      </div>
+      <div class="source-cards">
+        <article>
+          <h3>PPC — Bacharelado em Inteligência Artificial</h3>
+          <p>Projeto Pedagógico do Curso: identificação, carga horária, integralização, matriz curricular, perfil do egresso, Projetos Integradores, APP, estágio e PFC.</p>
+          <a href="https://univesp.br/cursos" target="_blank" rel="noopener">Abrir área de cursos da Univesp</a>
+        </article>
+        <article>
+          <h3>Manual do Aluno Univesp</h3>
+          <p>Guia oficial para dúvidas frequentes: AVA, calendário, avaliações, fóruns, canais de comunicação, matrícula, acessibilidade e orientações gerais.</p>
+          <a href="https://apps.univesp.br/manual-do-aluno/" target="_blank" rel="noopener">Abrir Manual do Aluno</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="editar" class="section edit-guide">
+      <div class="section-head">
+        <p class="eyebrow">Site editável</p>
+        <h2>Como alterar perguntas, respostas e fontes</h2>
+      </div>
+      <div class="steps">
+        <article>
+          <strong>1</strong>
+          <h3>Abra o arquivo <code>data.js</code></h3>
+          <p>As perguntas ficam em uma lista chamada <code>FAQ_ITEMS</code>. Cada item tem eixo, pergunta, resposta, fonte, link e tags.</p>
+        </article>
+        <article>
+          <strong>2</strong>
+          <h3>Edite somente texto</h3>
+          <p>Para trocar uma resposta, altere o campo <code>a</code>. Para trocar a pergunta, altere <code>q</code>. Para mover de eixo, altere <code>axis</code>.</p>
+        </article>
+        <article>
+          <strong>3</strong>
+          <h3>Salve e publique</h3>
+          <p>Se estiver no GitHub, clique em <em>Commit changes</em>. O GitHub Pages atualiza o site automaticamente após alguns segundos ou minutos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Guia comunitário de apoio aos calouros do Bacharelado em IA — Univesp.</p>
+    <p>Conteúdo-base: PPC do curso e Manual do Aluno. Última revisão deste pacote: <span id="today"></span>.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
